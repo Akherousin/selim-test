@@ -1,10 +1,16 @@
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
-import Button from '../../components/Button/Button';
-import HomeSvg from './HomeSvg.svg';
-import Advantages from '../../components/Advantages/Advantages';
-import Services from '../../components/Services/Services';
-import './HomePage.scss';
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Button from "../../components/Button/Button";
+import HomeSvg from "./HomeSvg.svg";
+import Advantages from "../../components/Advantages/Advantages";
+import Services from "../../components/Services/Services";
+import OurServices from "../../components/OurServices/OurServices";
+
+import "./HomePage.scss";
+import NewsList from "../../components/News/NewsList";
+import ReviewList from "../../components/ReviewList/ReviewList";
+
+import Form from "../../components/Form/Form";
 
 function HomePage() {
   return (
@@ -38,12 +44,17 @@ function HomePage() {
           </p>
         </div>
       </section>
-
+      <section>
+        <OurServices />
+      </section>
       <section aria-labelledby="advantages__title" className="advantages">
         <h2 id="advantages__title" className="advantages__title">
           Наши преимущества
         </h2>
         <Advantages />
+      </section>
+      <section>
+        <NewsList />
       </section>
 
       <section aria-labelledby="services__title" className="services">
@@ -52,7 +63,12 @@ function HomePage() {
         </h2>
         <Services />
       </section>
-
+      <section>
+        <ReviewList />
+      </section>
+      <section>
+        <Form />
+      </section>
       <Footer />
     </div>
   );
