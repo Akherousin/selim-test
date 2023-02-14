@@ -12,6 +12,7 @@ import DoorName from "../DoorName/DoorName";
 const OurServices = () => {
   return (
     <>
+     <div className={s.outer_service}>
       <div className={s.services}>
         <Title>Мы предлагаем</Title>
         <div className={s.grid}>
@@ -37,6 +38,7 @@ const OurServices = () => {
           </div>
         </div>
         <Btn>смотреть все</Btn>
+      </div>
       </div>
     </>
   );
