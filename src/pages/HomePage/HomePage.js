@@ -11,6 +11,7 @@ import NewsList from "../../components/News/NewsList";
 import ReviewList from "../../components/ReviewList/ReviewList";
 
 import Form from "../../components/Form/Form";
+import OurWorks from "../../components/OurWorks/OurWorks";
 
 function HomePage() {
   return (
@@ -56,7 +57,9 @@ function HomePage() {
       <section>
         <NewsList />
       </section>
-
+      <section>
+        <OurWorks/>
+      </section>
       <section aria-labelledby="services__title" className="services">
         <h2 id="services__title" className="services__title">
           Сервис
@@ -66,6 +69,7 @@ function HomePage() {
       <section>
         <ReviewList />
       </section>
+
       <section>
         <Form />
       </section>
